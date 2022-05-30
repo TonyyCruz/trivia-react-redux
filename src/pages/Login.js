@@ -34,13 +34,13 @@ class Login extends Component {
   }
 
   handlePlayClick = async () => {
-    const { history, dispatch } = this.props;
+    const { history, dispatchGetToken, dispatchSetPlayer } = this.props;
     const { userName, userEmail } = this.state;
-    await dispatch(getTokenThunk());
-    dispatch(setPlayer({
+    await dispatchGetToken();
+    dispatchSetPlayer({
       name: userName,
       gravatarEmail: userEmail,
-    }));
+    });
     history.push('/game');
   }
 
@@ -84,16 +84,16 @@ class Login extends Component {
   }
 }
 
-/* const mapStateToProps = (state) => ({
-  token: state.token,
-}); */
+const mapDispatchToProps = (dispatch) => ({
+  dispatchGetToken: () => dispatch(getTokenThunk()),
+  dispatchSetPlayer: (player) => dispatch(setPlayer(player)),
+});
 
-// const mapDispatchToProps = (dispatch) => ({});
-
-export default connect()(Login);
+export default connect(null, mapDispatchToProps)(Login);
 
 Login.propTypes = {
-  dispatch: PropTypes.func.isRequired,
+  dispatchGetToken: PropTypes.func.isRequired,
+  dispatchSetPlayer: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func,
   }).isRequired,

@@ -25,8 +25,7 @@ class GameScreen extends Component {
     const { getQuestions, history } = this.props;
     await getQuestions();
     const { invalidToken } = this.props;
-    console.log(invalidToken);
-    if (invalidToken === true) {
+    if (invalidToken) {
       history.push('/');
       localStorage.removeItem('token');
     }
@@ -101,10 +100,6 @@ class GameScreen extends Component {
   handleNextQuestion = () => {
     const { currentQuestion } = this.state;
     const maxAnswers = 5;
-
-    // answers.forEach((answer) => {
-    //   answer.className = '';
-    // });
 
     this.setState({
       currentQuestion: currentQuestion + 1,
