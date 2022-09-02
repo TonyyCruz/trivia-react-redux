@@ -1,16 +1,66 @@
-# 🚧 README em construção 🚧
+<h1 align="center">Projeto trivia</h1>
 
-<!-- Olá, Tryber!
+<p align="center">Foi desenvolvido um jogo de perguntas e respostas baseado no jogo Trivia (tipo um show do milhão americano) utilizando React e Redux.</p>
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+---
 
-É essencial que você preencha esse documento por conta própria, ok?
+## 💻 Sobre o projeto
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+Trivia - Este projeto foi desenvolvido em equipe e teve como objetivo criar um jogo de perguntas e respostas gamificado onde no final o usuário pode ver seu ranking em relação aos outros usuários que testaram a aplicação. 
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+Foi utilizado o kanban como metodologia de projetos a partir do trello e o slack como ferramenta de comunicação assincrona.
 
--->
+<h3>Para acessar o jogo basta acessar este <a href="https://projeto-trivia-seven.vercel.app/" target="_blank">link</a></h3>
+
+---
+
+## ⚙️ Funcionalidades
+
+- [x] Cadastro de usuário
+- [x] Tela de jogo com perguntas e opções de respostas
+- [x] Tela de Ranking
+
+---
+
+## 🛠 Tecnologias utilizadas
+
+-   **React Router Dom**
+-   **React**
+-   **Redux**
+-   **Figma**
+-   **Firebase**
+-   **Sass**
+-   **React Testing Library**
+
+---
+
+# 🚀 Como executar o projeto
+
+<p>Pode acessa-lo através do <a href="https://projeto-trivia-seven.vercel.app/" target="_blank">link</a></h3> ou</p>
+
+_1- Clone o repositorio_
+
+```jsx
+git clone git@github.com:TonyyCruz/recipes-app-with_RTK.git
+```
+
+_2- Instale as dependencias,execute dentro da pasta do projeto._
+
+```jsx
+npm install
+```
+
+_3- Inicie o projeto,execute dentro da pasta do projeto._
+
+```jsx
+npm start
+```
+
+---
+
+
+# 👨‍💻 Contribuidores
+
+Galera top do time!
+
+## *Italo Iveldo*, *klaus lube* e *Gean Antunes*.
