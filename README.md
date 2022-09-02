@@ -63,4 +63,15 @@ npm start
 
 Galera top do time!
 
-## *Italo Iveldo*, *klaus lube* e *Gean Antunes*.
+## Desenvolvimento.
+Anthony Cruz, Italo Iveldo e Rafhael Oliveira.
+
+---
+
+## Testes
+klaus lube
+
+---
+
+## Estilização
+Gean Antunes
